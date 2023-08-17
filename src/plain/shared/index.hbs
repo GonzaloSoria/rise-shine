@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="ad.size" content="width={{settings.size.width}},height={{settings.size.height}}">
+
+  <title>{{settings.size.width}}x{{settings.size.height}}</title>
+
+  <link rel="stylesheet" href="{{content.css}}" type="text/css">
+
+  <script type="text/javascript">
+    var clickTag = "{{content.clickTag}}";
+  </script>
+</head>
+
+<body>
+<div class="banner border">
+  <div class="content fullscreen">
+
+    <img class="{{content.bgPosition}} bg" src="{{content.bgImage}}">
+
+    <svg class="shape" viewBox="0 0 1080 351" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 20.3899V0C421.025 62.0648 895.427 25.8603 1080 0V20.3899C567.586 81.2611 146.494 45.7529 0 20.3899Z" fill="#ffffff"/>
+      <path d="M0 351V20C412.364 78.577 891.818 44.4071 1080 20V351H0Z" fill="#746DAC"/>
+    </svg>
+
+    <div class="bg-violet"></div>
+
+    <div class="{{content.gradientPosition}}"></div>
+
+    <div class="{{content.copyContainerAPosition}}">
+      <div class="{{content.positionCopyA}}">{{content.copy_a}}</div>
+      <div class="{{content.positionCopyB}}">
+        {{content.copy_b}} 
+        {{#if content.copy_f}}
+          <span class="{{content.positionCopyF}}">{{content.copy_f}}</span>
+        {{/if}}
+      </div>
+    </div>
+
+    <div class="{{content.copyContainerBPosition}}">
+      <div class="copy_c">{{content.copy_c}}</div>
+      <div class="copy_d">{{content.copy_d}}</div>
+    </div>
+
+    <div class="{{content.copyEPosition}}">{{content.copy_e}}</div>
+    <img class="{{content.milkaLogoPosition}}" inline src="{{content.milkaLogo}}">
+    <img class="{{content.logoBPosition}}" inline src="{{content.milkaLogo}}">
+    <img class="{{content.logoPosition}}" inline src="{{content.logo}}">
+
+  </div>
+  <div class="mainExit fullscreen"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+</body>
+</html>

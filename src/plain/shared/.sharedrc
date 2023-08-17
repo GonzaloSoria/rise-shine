@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "browserSupport": ["> 1%", "not ie 11"],
+    "optimizations": {
+      "css": true,
+      "image": true,
+      "html": true,
+      "js": true
+    },
+    "contentSource": {
+      "url": "https://docs.google.com/spreadsheets/d/1wD5QoJStvOEs1pUzMeSJODLfg8SGWh1ZnCuP-7tvn3c/edit#gid=0",
+      "apiKey": "AIzaSyDwmuyytjeceqNdiPWvGRQqwfsz8t2Xo6c",
+      "tabName": "main"
+    },
+    "useOriginalFileNames": false,
+    "entry": {
+      "js": "./script/main.js",
+      "html": "./index.hbs"
+    },
+    "fonts": [
+      {
+        "sources": [
+          "./fonts/OpenSans-Regular.woff",
+          "./fonts/OpenSans-Regular.woff2"
+        ],
+        "subset": {
+          "glyphs": [
+            "content.title"
+          ]
+        }
+      },
+      {
+        "sources": [
+          "./fonts/OpenSans-Bold.woff",
+          "./fonts/OpenSans-Bold.woff2"
+        ],
+        "subset": {
+          "glyphs": [
+            "content.cta"
+          ]
+        }
+      }
+    ]
+  },
+  "content": {
+    "css": "./css/style.css",
+    "defaultFonts": [
+      "cooperm",
+      "OpenSansBold"
+    ],
+    "defaultFontUrl": "./css/fonts.css",
+    "clickTag": "https://www.google.com",
+    "milka": "./img/milka.png"
+  }
+}

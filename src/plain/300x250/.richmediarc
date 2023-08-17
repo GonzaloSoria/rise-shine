@@ -1,0 +1,16 @@
+{
+  "parent": "../shared/.sharedrc",
+  "settings": {
+    "size": {
+      "width": 300,
+      "height": 250
+    },
+    "entry": {},
+    "contentSource": {
+      "filter": {
+        "size": "300x250"
+      }
+    }
+  },
+  "content": {}
+}
